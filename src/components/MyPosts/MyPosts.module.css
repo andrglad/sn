@@ -1,0 +1,28 @@
+.posts{
+  padding: 10px;
+  
+}
+
+.posttext{
+  width: 100%;
+  border: 3px gray solid;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.button{
+  display: block;
+  width: 200px;
+  height: 30px;
+  background: gold;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 0;
+  font-family: Arial, sans-serif;
+  margin: 10px 0 30px;
+  line-height: 30px;
+}

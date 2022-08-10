@@ -1,0 +1,49 @@
+.post {
+    background: beige;
+    color: brown;
+    padding: 10px;
+}
+
+.post img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 5px;
+    display: table;
+    margin: 0 1em 0 0;
+}
+
+.postcontent{
+    display: inline-flex;
+}
+
+.rate{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.like{
+    margin-right: 30px;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: blanchedalmond;
+    color: gray;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 28px;
+}
+
+.like:hover{
+    background-color: brown;
+    color: beige;
+}
+
+.likes{
+    width: 100px;
+    height: 30px;
+    color: brown;
+    background-color: aqua;
+    line-height: 28px;
+}
