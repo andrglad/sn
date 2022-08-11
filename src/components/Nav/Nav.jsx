@@ -1,8 +1,9 @@
 import style from "./Nav.module.css";
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import Friends from "./Friends/Friends";
 
-function Nav() {
+function Nav(props) {
     return (
         <nav className={style.nav}>
             <div>
@@ -24,6 +25,10 @@ function Nav() {
             <div>
                 <NavLink to="*" className={({ isActive }) =>(isActive ? style.activeLink : "")}></NavLink>
             </div>
+
+        <div>
+            <Friends friends={props.friends} />
+        </div>
         </nav>
     );
 }

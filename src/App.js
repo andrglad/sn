@@ -15,7 +15,7 @@ function App(props) {
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
-        <Nav />
+        <Nav friends={props.state.friendsBlock} />
         <Profile />
         <Routes>
         <Route path='/myposts' element={<MyPosts myposts={props.state.myposts} />} />

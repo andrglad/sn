@@ -19,9 +19,16 @@ let state = {
             { id: 1, message: "Hi!" },
             { id: 2, message: "How are you?" },
             { id: 3, message: "I'm fine!" },
-            { id: 4, message: "Should we stay or should we go!" },
+            { id: 4, message: "Should we stay or should we go! Should we stay or should we go! Should we stay or should we go!" },
             { id: 5, message: "Yep" },
             { id: 6, message: "Yo" }
+        ]
+    },
+    friendsBlock: {
+        friends: [
+            { id: 1, firstName: 'Andrey', secondName: 'Gladilin' },
+            { id: 1, firstName: 'Ivan', secondName: 'Petrov' },
+            { id: 1, firstName: 'Andrey', secondName: 'Petrom' }
         ]
     }
 }
