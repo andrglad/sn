@@ -9,13 +9,13 @@ function MyPosts(props) {
 
     function addPost () {
         let newPostText = newPostElement.current.value;
-        alert(newPostText);
+        props.addNPost(newPostText);
     }
 
     return (
         <section className="section">
             <div className={classes.posts}>
-                <textarea className={classes.posttext} type="email" placeholder="Enter your post" ref={newPostElement}></textarea>
+                <textarea className={classes.posttext} type="text" placeholder="Enter your post" ref={newPostElement}></textarea>
                 <button className={classes.button} onClick={ addPost }>Add post</button>
                 {postList}
             </div>

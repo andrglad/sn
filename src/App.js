@@ -18,7 +18,7 @@ function App(props) {
         <Nav friends={props.state.friendsBlock} />
         <Profile />
         <Routes>
-        <Route path='/myposts' element={<MyPosts myposts={props.state.myposts} />} />
+        <Route path='/myposts' element={<MyPosts myposts={props.state.myposts} addNPost={props.addNPost} />} />
         <Route path='/dialogs/*' element={<Dialogs dialogs={props.state.dialogs} />} />
         <Route path='/news' element={<News />} />
         <Route path='/music' element={<Music />} />
