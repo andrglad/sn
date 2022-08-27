@@ -6,7 +6,8 @@ let state = {
             { id: 1, message: "Hi, how are you?", likes: 18 },
             { id: 2, message: "It's my first post", likes: 20 },
             { id: 3, message: "It's my second post", likes: 120 }
-        ]
+        ],
+        newPostText: 'it-kamasutra.com'
     },
     dialogs: {
         users: [
@@ -38,10 +39,16 @@ let state = {
 export function addNPost (postMessage) {
     let newPost = {
         id: 5,
-        message: postMessage,
+        message: state.myposts.newPostText,
         likes: 100
     }
     state.myposts.posts.push(newPost);
+    state.myposts.newPostText = '';
+    rerenderEntireTree(state);
+}
+
+export function updateNewPostText (newText) {
+    state.myposts.newPostText = newText;
     rerenderEntireTree(state);
 }
 

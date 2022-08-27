@@ -5,16 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import state from './redux/state';
 import { addNPost } from './redux/state'
+import { updateNewPostText } from './redux/state'
 
 // addPost('This message is added from index.js');
 // addPost('This one more message is added from index.js');
 
-export function rerenderEntireTree(state) {
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-  const root = ReactDOM.createRoot(document.getElementById('root'));
+export function rerenderEntireTree(state) {
   root.render(
     <React.StrictMode>
-      <App state={state} addNPost={addNPost} />
+      <App state={state} addNPost={addNPost} updateNewPostText={updateNewPostText} />
     </React.StrictMode>
   );
 
